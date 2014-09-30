@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgnewcateg"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNameCateg"
+        android:hint="@string/newcategname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/newcategdiscr"
+        android:id="@+id/textDiscrCateg"
+        android:layout_below="@+id/editNameCateg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDiscrCateg"
+        android:layout_below="@+id/textDiscrCateg" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savebutton"
+        android:id="@+id/buttonSaveCateg"
+        android:layout_below="@+id/editDiscrCateg"
+        android:layout_alignParentLeft="true"
+        android:onClick="onSaveButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/declbutton"
+        android:id="@+id/buttonDeclCateg"
+        android:layout_below="@+id/editDiscrCateg"
+        android:layout_alignParentRight="true"
+        android:onClick="onDeclButtonClick"/>
+</RelativeLayout>
